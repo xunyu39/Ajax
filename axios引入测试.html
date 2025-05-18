@@ -10,10 +10,12 @@
   <script>
     
     axios({
-      url:'http://hmajax.itheima.net/api/news'
+      url:'https://api.github.com/users/octocat'
     }).then(result =>{
       console.log(result)
-    })
+    }).catch(error => {
+      console.error('请求失败:', error)
+    });
   </script>
 </body>
-</html>
+</html> 
